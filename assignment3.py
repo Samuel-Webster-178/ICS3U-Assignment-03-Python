@@ -22,16 +22,19 @@ def main():
             elif int_y_coordinate < 0:
                 print("Point is in the 4th quadrant.")
             else:
-                print("On y axis")
+                print("On x axis")
         elif int_x_coordinate < 0:
             if int_y_coordinate > 0:
                 print("Point is in the 2nd quadrant.")
             elif int_y_coordinate < 0:
                 print("Point is in the 3rd quadrant.")
             else:
-                print("On y axis")
+                print("On x axis")
         else:
-            print("On x axis")
+            if int_y_coordinate == 0:
+                print("Point is on origin.")
+            else:
+                print("On y axis")
     except Exception:
         print("Please enter integers!")
     finally:
